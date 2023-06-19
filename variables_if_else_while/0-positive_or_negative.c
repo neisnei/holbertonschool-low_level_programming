@@ -1,6 +1,8 @@
 #include <stdio.h>
-int main(void) {
-    
-    printf("%d positive,n");
+/* betty style doc for function main goes there */
+int main(void) 
+{
+    int n = 2;
+    printf("%d positive",n);
     return 0;
 }
