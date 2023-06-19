@@ -3,6 +3,6 @@
 int main(void) 
 {
     int n = 2;
-    printf("%d positive",n);
+    printf("%c positive",n);
     return 0;
 }
