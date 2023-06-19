@@ -1,8 +1,11 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 int main(void) 
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
 {
     int n = 2;
-    printf("%c positive",n);
+    printf("%dn positive",n);
     return 0;
 }
