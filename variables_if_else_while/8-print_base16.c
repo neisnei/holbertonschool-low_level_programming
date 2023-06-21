@@ -10,7 +10,7 @@ int main(void)
 {
 	char c;
 
-	for (c = 0; < 16; c++)
+	for (c = 0; < c = 16; c++)
 	{
 		putchar ('0' + c);
 	}
