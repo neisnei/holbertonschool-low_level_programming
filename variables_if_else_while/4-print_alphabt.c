@@ -1,5 +1,4 @@
 #include <stdio.h>
-i
 
 /**
  * main - Prints the alphabet in lowercase
@@ -8,6 +7,7 @@ i
  */
 
 int main(void)
+
 {
 	char c;
 
