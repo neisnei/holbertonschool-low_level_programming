@@ -12,7 +12,7 @@ int main(void)
 
 	for (c = 0; c < 16; c++)
 	{
-		putchar (c);
+		putchar ('0' < c);
 	}
 		return (0);
 }
