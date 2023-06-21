@@ -14,5 +14,9 @@ int main(void)
 	{
 		putchar ('0' + c);
 	}
-	return (0);
+	for (c = 'a'; c < 'f'; c++)
+	{
+		putchar (c);
+	}
+		return (0);
 }
