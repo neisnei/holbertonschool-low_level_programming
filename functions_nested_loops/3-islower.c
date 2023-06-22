@@ -2,7 +2,7 @@
 
 /**
  * main - check the code
- *
+ *@c - islower
  * Return: 1 if c is lowercase
  */
 
