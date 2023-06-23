@@ -1,4 +1,4 @@
-# Very basic Makefile
+#include "main.h"
 
-all: holberton.c main.c
-	gcc -Wall -Werror -Wextra -pedantic holberton.c main.c -o holberton
+all: main.c holberton.c
+	gcc main.c holberton.c -o holberton
