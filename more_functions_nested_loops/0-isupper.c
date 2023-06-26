@@ -7,8 +7,9 @@
 
 int _isupper(int c)
 {
-if ((c >= 'A') && (c <= 'Z'))
-return (1);
+char c;
 
-return (0);
+	for (c = 'A'; c <= 'Z'; ++c)
+		printf("%c: %d\n", c, _isupper(c));
+	return (0);
 }
