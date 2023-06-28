@@ -9,20 +9,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int count = 0, count2 = 0;
+	int string = 0, string2 = 0;
 
-	while (*(dest + count) != '\0')
+	while (*(dest + string) != '\0')
 	{
-		count++;
+		string++;
 	}
 
-	while (count2 >= 0)
+	while (string >= 0)
 	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == '\0')
+		*(dest + string) = *(src + string2);
+		if (*(src + string2) == '\0')
 			break;
-		count++;
-		count2++;
+		string++;
+		string2++;
 	}
 	return (dest);
 }
