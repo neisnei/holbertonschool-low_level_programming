@@ -2,7 +2,7 @@
 
 /**
  * print_array - prints n elements of an array of integers
- * @*a:int
+ * @a:int
  * @n: int
  */
 
