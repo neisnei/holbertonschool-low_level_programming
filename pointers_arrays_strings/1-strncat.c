@@ -7,7 +7,6 @@
  * @n: int
  * Return: a pointer
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int a, b;
