@@ -2,7 +2,8 @@
 
 /**
  *_strspn - gets the length of a prefix
- *
+ *@s: char
+ *@accept: char
  * Return: Always 0.
  */
 
