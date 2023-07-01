@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_chessboard - print a chessboard.
- * @a: source matrix
+ * print_chessboard - prints the sum of the two
+ * @a: int
  * Return: chessboard.
  */
 void print_chessboard(char (*a)[8])
