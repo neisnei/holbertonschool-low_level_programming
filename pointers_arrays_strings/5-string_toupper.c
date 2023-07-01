@@ -7,13 +7,18 @@
  * Return: Always 0
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-	char* string_toupper(char* str) {
-    int length = strlen(str);
-    for (int i = 0; i < length; i++) {
-        if (str[i] >= 'a' && str[i] <= 'z') {
-            str[i] = str[i] - 32;
-        }
-    }
-    return str;
+	int i = 0;
+
+	while (*(s + i) != '\0')
+	{
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		{
+			*(s + i) = *(s + i) - 32;
+		}
+		i++;
+	}
+	return (s);
+}
+
