@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_diagsums - print additions of the two diagonals.
- * @a: source matrix
- * @size: size NxN of matrix
+ * print_diagsums - printn the sum
+ * @a: int
+ * @size: int
  *
- * Return: chessboard.
+ * Return: Always 0
  */
+
 void print_diagsums(int *a, int size)
 {
 	int i, j, sumdiag1 = 0, sumdiag2 = 0, step1, step2;
