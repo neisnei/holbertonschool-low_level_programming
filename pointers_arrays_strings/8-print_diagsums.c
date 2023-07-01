@@ -1,27 +1,34 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_diagsums - printn the sum
+ * print_diagsums - Print the sum
  * @a: int
  * @size: int
- *
- * Return: Always 0
  */
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, sumdiag1 = 0, sumdiag2 = 0, step1, step2;
+	int i, sum, sizer;
 
-	for (i = 0; i <= (size - 1); i++)
+	i = 0;
+	sum = 0;
+	sizer = size * size;
+	while (i < sizer)
 	{
-		step1 =  (size + 1) * i;
-		sumdiag1 = sumdiag1 + *(a + step1);
+		if (i % (size + 1) == 0)
+			sum += a[i];
+		i++;
 	}
+	printf("%d, ", sum);
 
-	for (j = 1; j <= size; j++)
+	sum = 0;
+	i = 0;
+	while (i < sizer)
 	{
-		step2 = (size - 1) * j;
-		sumdiag2 = sumdiag2 + *(a + step2);
+		if (i % (size - 1) == 0 && i != (sizer - 1) && i != 0)
+			sum += a[i];
+		i++;
 	}
-	printf("%d, %d\n", sumdiag1, sumdiag2);
+	printf("%d\n", sum);
 }
