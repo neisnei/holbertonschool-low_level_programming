@@ -5,14 +5,19 @@
  * @s: char
  */
 
+#include "main.h"
+
+/**
+ * _puts_recursion - prints string
+ * @s: char
+ */
+
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
-	{
-		_putchar ('\n');
 		return;
-	}
 
-	_putchar (*s);
-	return (_puts_recursion(s + 1));
+	_putchar(*s);
+	_puts_recursion(s + 1)
 }
+
