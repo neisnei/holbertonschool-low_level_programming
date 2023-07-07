@@ -16,7 +16,7 @@ int prime2(int a, int b)
 }
 
 /**
- * is_prime_number - returns 1 if the input int is a prime n, otherwise return 0
+ * is_prime_number - returns 1 if the input int prime number
  * @n: int
  * Return: 1
  */
