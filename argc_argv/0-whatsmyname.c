@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - prints its name
  *
  * @argc: Counts the number of parameters that go into main
  * @argv: Pointer of array of pointers containing strings entering main
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(int argc, char **argv)
 {
