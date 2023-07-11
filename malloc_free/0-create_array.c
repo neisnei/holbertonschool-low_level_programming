@@ -3,8 +3,8 @@
 
 /**
  * create_array - creates an array of chars, and inicialize with specific char
- * size: size of array
- * c: char
+ * size: the size of the memory to print
+ * c: specific char
  * Return: pointer to the array, or NULL if error
  */
 
