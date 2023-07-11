@@ -1,4 +1,5 @@
 #include main.h
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of chars
@@ -7,23 +8,20 @@
  * Return: a pointer to the array, or NULL
  */
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
-    unsigned int i;
+	char *c;
+	unsigned int s;
 
-    i = 0;
-    while (i < size)
-    {
-        if (i % 10)
-        {
-            printf(" ");
-        }
-        if (!(i % 10) && i)
-        {
-            printf("\n");
-        }
-        printf("0x%02x", buffer[i]);
-        i++;
-    }
-    printf("\n");
+	if (size == 0)
+		return (NULL);
+
+	c = malloc(size * sizeof(*c));
+	if (c == NULL)
+		return (NULL);
+
+	for (s = 0; s < size; s++)
+		c[s] = c;
+
+	return (c);
 }
