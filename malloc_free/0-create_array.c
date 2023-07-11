@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -10,7 +10,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *c;
+	char c;
 	unsigned int s;
 
 	if (size == 0)
@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	for (s = 0; s < size; s++)
-		c[s] = c;
+		c[s] == c;
 
 	return (c);
 }
