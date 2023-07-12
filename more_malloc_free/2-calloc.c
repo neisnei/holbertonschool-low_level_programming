@@ -8,20 +8,21 @@
  * Return: Void
  */
 
-#include <stdlib.h>
-#include <string.h>
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	unsigned int i;
+	char *p;
 
-void *_calloc(unsigned int nmemb, unsigned int size) {
-    if (nmemb == 0 || size == 0) {
-        return NULL;
-    }
-    
-    void *ptr = malloc(nmemb * size);
-    if (ptr == NULL) {
-        return NULL;
-    }
-    
-    memset(ptr, 0, nmemb * size);
-    
-    return ptr;
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	p = malloc(nmemb * size);
+
+	if (p == NULL)
+		return (NULL);
+
+	for (i = 0; i < nmemb * size; i++)
+		p[i] = 0;
+
+	return (p);
 }
