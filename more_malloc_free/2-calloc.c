@@ -9,17 +9,38 @@
  * Return: A string concatenated
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size) {
-    if (nmemb == 0 || size == 0) {
-        return NULL;
-    }
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	unsigned int i, j;
+	char *p;
 
-    void *ptr = malloc(nmemb * size);
-    if (ptr == NULL) {
-        return NULL;
-    }
+	if (s1 == NULL)
+		s1 = "";
 
-    memset(ptr, 0, nmemb * size);
+	if (s2 == NULL)
+		s2 = "";
 
-    return ptr;
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+
+	if (n >= j)
+		n = j;
+
+	p = malloc(sizeof(char) * (i + n + 1));
+
+	if (p == NULL)
+		return (NULL);
+
+	for (i = 0; s1[i] != '\0'; i++)
+		p[i] = s1[i];
+
+	for (j = 0; j < n; j++, i++)
+		p[i] = s2[j];
+
+	p[i] = '\0';
+
+	return (p);
 }
