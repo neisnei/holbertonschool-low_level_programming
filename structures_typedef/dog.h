@@ -19,12 +19,13 @@ int main (void)
 {
   struct dog my_dog;
 
-  my_dog.name = "Reina"
-  my_dog.age = 3.5;
-  my_dog.owner = "Nei"
+  mydog.name = "Reina"
+  mydog.age = 3.5;
+  mydog.owner = "Nei"
 
-  printf("Name: %s\n", my_dog.name);
-  printf("Age: %.1f\n", my_dog.age);
-  printf("Owner: %s\n", my_dog.age);
+  printf("Name: %s\n", mydog.name);
+  printf("Age: %.1f\n", mydog.age);
+  printf("Owner: %s\n", mydog.age);
+};
 void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
