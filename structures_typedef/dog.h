@@ -3,12 +3,14 @@ include <stdio.h>
 
 /**
  * struct dog - Define a new type
- *
+ * @name: char1
+ * @age: float
+ * @owner: char2
  * Return: Always 0
  */
 
-  struct dog {
-
+  struct dog
+{
     name, char = "Reina"
     age, float = 3.5
     owner, char = "Nei"
