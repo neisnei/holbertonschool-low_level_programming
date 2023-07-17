@@ -23,8 +23,6 @@ int main(void)
   my_dog.name = "Reina";
   my_dog.age = 3.5;
   my_dog.owner = "Nei";
-
-  printf("Reina: %s\n", mydog.name);
-  printf("3.5: %.1f\n", mydog.age);
-  printf("Nei: %s\n", mydog.owner);
+};
+  void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
