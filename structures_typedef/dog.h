@@ -1,12 +1,11 @@
 #ifndef dog_h
-#define dog.h
+#define dog_h
 
 /**
- * struct dog - Define a new type
+ * struct dog - Define a new type struct dog
  * @name: char1
  * @age: float
  * @owner: char2
- * Return: Always 0
  */
 
   struct dog
