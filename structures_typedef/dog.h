@@ -2,7 +2,7 @@
 #define dog_h
 
 /**
- * struct dog - Define a new type struct dog
+ * struct dog - Define a new type struct dog with the following elements:
  * @name: char1
  * @age: float
  * @owner: char2
