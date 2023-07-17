@@ -11,9 +11,9 @@
 
   struct dog
 {
-    name, char = "Reina"
-    age, float = 3.5
-    owner, char = "Nei"
+    char *name;
+    float age;
+    char *owner;
 };
 
 int main(void)
@@ -27,6 +27,4 @@ int main(void)
   printf("Reina: %s\n", mydog.name);
   printf("3.5: %.1f\n", mydog.age);
   printf("Nei: %s\n", mydog.owner);
-
-  Return 0;
-}
+#endif
