@@ -1,5 +1,5 @@
-include <stdio.h>
-#include "dog.h"
+#ifndef dog_h
+#define dog.h
 
 /**
  * struct dog - Define a new type
