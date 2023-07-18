@@ -1,14 +1,14 @@
 #include <stdio.h>
+#include "dog.h"
 #include <stdlib.h>
 #include <string.h>
-#include "dog.h"
 
 /**
- * new_dog - Write a function that creates new dog.
- * @name - char1
- * @age - float
- * @owner - char2
- * Return: Always 0
+ * new_dog - Write a function that creates a new dog.
+ * @name: char1
+ * @age: float
+ * @owner: char2
+ * Return: always 0
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
