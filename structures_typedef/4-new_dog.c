@@ -4,7 +4,7 @@
 #include "dog.h"
 
 /**
- * dog_t *new_dog - Write a function that creates new dog
+ * new_dog - Write a function that creates new dog
  * *name - char1
  * age - float
  * *owner - char2
