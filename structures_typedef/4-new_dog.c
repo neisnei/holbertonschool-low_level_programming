@@ -5,10 +5,10 @@
 
 /**
  * new_dog - Write a function that creates new dog
- * *name - char1
+ * name - char1
  * age - float
- * *owner - char2
- * Return: NULL
+ * owner - char2
+ * Return: Always 0
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
