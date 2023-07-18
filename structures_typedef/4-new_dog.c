@@ -5,9 +5,9 @@
 
 /**
  * new_dog - Write a function that creates new dog
- * name - char1
- * age - float
- * owner - char2
+ * @name - char1
+ * @age - float
+ * @owner - char2
  * Return: Always 0
  */
 
