@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * int_index - Write a function that searches for an integer
+ * array_iterator - write a function that executes a function given as a parameter
  * @array: int
  * @size: is the size of the array
  * @action: is a pointer
