@@ -1,5 +1,5 @@
-#include 
-#include 
+#include <string.h>
+#include "get_op_func.c"
 
 /**
  * get_op_func - select the correct function
