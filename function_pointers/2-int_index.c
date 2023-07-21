@@ -3,10 +3,9 @@
 
 /**
  * int_index - Write a function searches a integer
- * @array:
- * @size:
- * @cmp:
- *
+ * @array: int
+ * @size: is the number of elements
+ * @cmp: is a pointer to used compare values
  * Return: 0 if false, something else otherwise
  */
 
@@ -18,7 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (i = 0; i < size; ++i)
 		{
-			if(cmp(array[i]))
+			if (cmp(array[i]))
 				return (i);
 		}
 	}
