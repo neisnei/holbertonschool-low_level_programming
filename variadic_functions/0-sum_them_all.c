@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
-
 /**
- * sum_them_all - sums up all the functionarguments
+ * sum_them_all - sums up all the function arguments
  * @n: number of arguments
  *
  * Return: the sum or 0
@@ -12,8 +11,8 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i;
 	va_list args;
 
-if (n == 0)
-return (0);
+	if (n == 0)
+		return (0);
 
 	va_start(args, n);
 
