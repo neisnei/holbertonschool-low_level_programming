@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "function_pointers.h"
 
 /**
@@ -6,7 +6,7 @@
  * @array: int
  * @size: is the number of elements
  * @cmp: is a pointer to used compare values
- * Return: 0 if false, something else otherwise
+ * Return: results
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
