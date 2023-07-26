@@ -1,13 +1,12 @@
-#include <string.h>
 #include "3-calc.h"
 
 /**
  * get_op_func - select the correct function
  * @s: the operation to perform
- * Return: NULL
+ * Return: Return
  */
 
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
         {"+", op_add},
@@ -18,6 +17,7 @@ int (*get_op_func(char *s))(int, int);
         {NULL, NULL}
     };
     int i;
+
 	i = 0;
 
 	while (i < s)
@@ -26,5 +26,5 @@ int (*get_op_func(char *s))(int, int);
 			return (ops[i].f);
 		++i;
 	}
-	return (NULL);
+	return (0);
 }
