@@ -2,60 +2,60 @@
 
 /**
  * op_add - return sum
- * @a:first operand
- * @b:second operand
+ * @a: int
+ * @b: int
  * Return: always 0
  */
 
-int op_add (int a, int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
  * op_sub - return difference
- * @a: first operand
- * @b: second operand
+ * @a: int
+ * @b: int
  * Return: always 0
  */
 
-int op_sub (int a, int b)
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul -return the product
- * @a: first operand
- * @b: second operand
+ * op_mul - return the product
+ * @a: int
+ * @b: int
  * Return: always 0
  */
 
-int op_mul (int a, int b)
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * op_div - divide
- * @a: first operand
- * @b: second operand
+ * op_div - return division
+ * @a: int
+ * @b: int
  * Return: always 0
  */
 
-int op_div (int a, int b)
+int op_div(int a, int b)
 {
 	return (a / b);
 }
 
 /**
  * op_mod - return the reminder
- * @a: first operand
- * @b: second operand
+ * @a: int
+ * @b: int
  * Return: always 0
  */
 
-int op_mod (int a, int b)
+int op_mod(int a, int b)
 {
 	return (a % b);
 }
