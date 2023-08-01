@@ -1,4 +1,9 @@
+#ifndef MAIN_H_
+#define MAIN_H_
 
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * struct list_s - singly linked list
