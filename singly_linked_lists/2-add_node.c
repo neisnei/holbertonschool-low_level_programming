@@ -13,8 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	adding = malloc(sizeof(list_t));
 
-	if (adding == NULL) ||
-	   	str == (NULL)
+	if (adding == NULL) || str == (NULL)
 		return (NULL);
 
 	adding->str = strdup(str);
