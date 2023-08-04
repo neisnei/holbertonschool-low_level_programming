@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * list_t - adds a new node at the end of a list
+ * add_node_end - adds a new node at the end of a list
  * @head: point to the begginer
  * @str: needs to be duplicated
  * Return: the address of the new element, or NULL
