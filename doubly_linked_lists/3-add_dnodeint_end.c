@@ -6,6 +6,7 @@
 /**
  * add_dnodeint_end - adds new node at the end
  * @head: begginer of the list
+ * @n: data be allocated into new node
  * Return: Always 0
  */
 
