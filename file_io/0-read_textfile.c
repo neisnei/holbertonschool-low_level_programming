@@ -29,6 +29,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	write(STDOUT_FILENO, txt, amount);
 
 	free(txt);
-	closed(Fd);
+	close(Fd);
 	return (amount);
 }
