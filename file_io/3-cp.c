@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - copies the content of file to another file
+ * main - main function
  * @argc: count of arguments
  * @argv: array of arguments
  * Return: number
