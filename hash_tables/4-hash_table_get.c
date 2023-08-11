@@ -9,19 +9,24 @@ include "hash_tables.h"
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int index;
-	hash_node_t *tmp;
+	unsigned long int idx = 0;
+	hash_node_t *cpy_head;
 
-	if (!ht || !key)
-		return (0);
+	if ((strcmp(key, "\0") == 0) || (ht == NULL) || (key == NULL))
+	{return (NULL); }
 
-	index = key_index((unsigned char *)key, ht->size);
-	tmp = ht->array[index];
-	while (tmp)
+	idx = key_index((unsigned char *)key, ht->size);
+	if (ht->array[idx] == NULL)
+	{return (NULL); }
+	cpy_head = ht->array[idx];
+
+	while (cpy_head)
 	{
-		if (strcmp(tmp->key, key) == 0)
-			return (tmp->value);
-		tmp = tmp->next;
+		if (strcmp(key, cpy_head->key) == 0)
+		{
+			return (cpy_head->value);
+		}
+		cpy_head = cpy_head->next;
 	}
 	return (NULL);
 }
